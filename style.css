@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .centered {
+    text-align: center;
+    width: 300px;
+  }
+  input, textarea, button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* optional dark overlay */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .centered {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+  }
+    

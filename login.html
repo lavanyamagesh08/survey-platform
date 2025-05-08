@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/login.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* dark transparent layer */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .centered {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 300px;
+    }
+
+    input, button {
+      display: block;
+      margin: 10px auto;
+      padding: 8px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="centered">
+      <h2>Login</h2>
+      <input id="loginUser" placeholder="Username" />
+      <input id="loginPass" placeholder="Password" type="password" />
+      <button onclick="login()">Login</button>
+
+      <h2>Signup</h2>
+      <input id="signupUser" placeholder="Username" />
+      <input id="signupPass" placeholder="Password" type="password" />
+      <button onclick="signup()">Signup</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

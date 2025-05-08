@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/create.jpg'); /* Use your actual image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .centered {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 300px;
+      color: black;
+    }
+
+    input, textarea, button {
+      display: block;
+      margin: 10px auto;
+      width: 100%;
+      padding: 8px;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="centered">
+      <h2>Create Survey</h2>
+      <input id="surveyTitle" placeholder="Survey Title" />
+      <textarea id="surveyDesc" placeholder="Survey Description"></textarea>
+      <button onclick="saveSurvey()">Save Survey</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

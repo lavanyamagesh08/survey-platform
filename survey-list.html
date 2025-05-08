@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey List</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/login.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .overlay {
+      background-color: transparent;
+      height: 100vh;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #surveyContainer {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #surveyContainer div {
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      border: none;
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h2>All Surveys</h2>
+    <div id="surveyContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadSurveys();
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/list.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .overlay {
+      background-color: transparent;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .dashboard-header {
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      max-width: 1000px;
+    }
+
+    .box {
+      flex: 1;
+      margin: 0 20px;
+      padding: 60px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .box button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .box button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="dashboard-header">Dashboard</div>
+    <div class="box-container">
+      <div class="box">
+        <button onclick="window.location.href='survey-list.html'">Survey List</button>
+      </div>
+      <div class="box">
+        <button onclick="window.location.href='create-survey.html'">Create Survey</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
